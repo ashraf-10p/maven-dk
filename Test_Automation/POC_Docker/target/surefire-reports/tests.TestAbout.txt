@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: tests.TestAbout
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 0.562 sec <<< FAILURE!
+beforeTest(tests.TestAbout)  Time elapsed: 0.302 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver is not executable: /Volumes/data/unified-data/projects/docker/asp.netDemo/Test_Automation/POC_Docker/./ChromeDriver/chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:140)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at utilities.BrowserConfig.openbrowser(BrowserConfig.java:42)
+	at objectRepo.AboutPage.openHomePage(AboutPage.java:60)
+	at tests.TestAbout.beforeTest(TestAbout.java:17)
+
